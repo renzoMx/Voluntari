@@ -1,0 +1,26 @@
+@import "../global/voluntari_variables";
+.landing {
+	background-image: image-url("l_bg.jpg");
+	background-attachment: fixed;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	> .overlay {
+		background: rgba(0,0,0,.6);
+		> .container {
+			> .row {
+				> .col-sm-8 {
+					> h2 {
+						color: $color_white;
+						font-size:2em;
+						font-weight:bold;
+					}
+					> p {
+						color: $color_white;
+						font-size: 1.2em;
+					}
+				}
+			}
+		}
+	}	
+}
