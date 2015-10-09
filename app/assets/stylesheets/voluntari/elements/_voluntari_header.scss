@@ -4,11 +4,10 @@
 header {
 	background: $bg_header;
 	left:0;
-	overflow:hidden;
 	position:fixed;
 	right:0;
 	top:0;
-	z-index:9999999 !important;
+	z-index:9999999;
 	> .container {
 		> h1 {
 			display: inline-block;
@@ -25,29 +24,30 @@ header {
 			float:right;
 			margin-top: .3em;
 		}				
-		> nav {
-			background: $color_orange;
-			height:100%;
-			left:0;
-			overflow:hidden;
-			position:absolute;
-			right:0;
-			top:-100%;
-			z-index: 999999;
+		> nav {				
 			> ul {
-				padding-top: 4em;
+				background: $color_orange;
+				left:0;
+				position:absolute;
+				right:0;
 				text-align:center;
+				top:52px;
+				z-index: 999999;				
 				> li {
+					border-bottom: 1px solid $color_orange_dark;
 					> a {
 						color: $color_white;
 						display:block;
 						text-transform:uppercase;
 						padding: 1em;
+						&:hover {
+							background: $color_orange_dark;
+							text-decoration:none;
+						}
 					}
-					> a:hover {
-						background: $color_orange_dark;
-						text-decoration:none;
-					}
+				}
+				> li:nth-last-child(1){
+					border-bottom: 0;
 				}
 			}
 		}
