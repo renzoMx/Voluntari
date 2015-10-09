@@ -53,3 +53,22 @@
 	font-family: $font;
 	font-size: $size;
 }
+
+// =============================================================================
+// Animations
+// =============================================================================
+
+@mixin animation-rotate-360($from, $to){
+	@keyframes animation-rotate{
+	  0%   { transform: rotate($from); }
+	  100% { transform: rotate($to); }
+	}
+}
+
+@mixin animation-burger($from, $to){
+	@keyframes animation-burger{
+	  0%   { transform: translateY($from); }
+	  100% { transform: translateY($to); }
+	}
+}
+

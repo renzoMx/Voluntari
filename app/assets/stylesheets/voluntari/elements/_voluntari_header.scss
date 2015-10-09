@@ -14,24 +14,42 @@ header {
 			vertical-align: top;
 			> a {
 				> img {
-					width: 150px;
+					width: 170px;
 				}
 			}	
 		}	
-		.burger:before {
+		> .burger:before {
 			@include icons('\e001', $color_blue ,'Flaticon', 1.5em);
 			display:inline-block;
 			float:right;
 			margin-top: .3em;
+		}
+		> .close-menu:before {
+			@include icons('\e000', $color_blue ,'Flaticon', 1.5em);
+			@include animation-rotate-360(0, 360deg);
+			animation-duration:.3s;
+			animation-name: animation-rotate;
+			display:inline-block;
+			float:right;
+			margin-top: .3em;
 		}				
-		> nav {				
+		> nav {	
+			> .show-menu {
+				height:auto;
+				overflow:visible;
+				transition: all .5s ease;
+			}
+			> .hidden-menu {
+				height: 0;
+				overflow:hidden;
+				transition: all .5s ease;
+			}			
 			> ul {
 				background: $color_orange;
 				left:0;
 				position:absolute;
 				right:0;
-				text-align:center;
-				top:52px;
+				text-align:center;				
 				z-index: 999999;				
 				> li {
 					border-bottom: 1px solid $color_orange_dark;
