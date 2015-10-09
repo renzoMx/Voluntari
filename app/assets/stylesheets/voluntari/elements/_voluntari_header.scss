@@ -1,0 +1,55 @@
+@import "../global/voluntari_variables";
+@import "../global/voluntari_settings";
+@import "../global/voluntari_mixins";
+header {
+	background: $bg_header;
+	left:0;
+	overflow:hidden;
+	position:fixed;
+	right:0;
+	top:0;
+	z-index:9999999 !important;
+	> .container {
+		> h1 {
+			display: inline-block;
+			vertical-align: top;
+			> a {
+				> img {
+					width: 150px;
+				}
+			}	
+		}	
+		.burger:before {
+			@include icons('\e001', $color_blue ,'Flaticon', 1.5em);
+			display:inline-block;
+			float:right;
+			margin-top: .3em;
+		}				
+		> nav {
+			background: $color_orange;
+			height:100%;
+			left:0;
+			overflow:hidden;
+			position:absolute;
+			right:0;
+			top:-100%;
+			z-index: 999999;
+			> ul {
+				padding-top: 4em;
+				text-align:center;
+				> li {
+					> a {
+						color: $color_white;
+						display:block;
+						text-transform:uppercase;
+						padding: 1em;
+					}
+					> a:hover {
+						background: $color_orange_dark;
+						text-decoration:none;
+					}
+				}
+			}
+		}
+	}
+}

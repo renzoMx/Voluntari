@@ -8,21 +8,35 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    - if @nav
-      %header
-        %div.container
-          %h1
-            %a{:href => '#', :title => 'Voluntari'} Voluntari
-          %nav
-            %ul
-              %li
-                %a{:href => '#'} Conoce
-              %li
-                %a{:href => '#'} &Uacute;nete
-              %li
-                %a{:href => '#'} Explora
-              %li
-                %a{:href => '#'} Contacto
-              %li
-                %a{:class => 'login', :href => '#'} Login
+    %header
+      %div.container
+        %h1
+          %a{:href => '#', :title => 'Voluntari'} 
+            = image_tag "logo.png", :class => "logo"
+        %a.burger{:href => "#"}
+        %nav
+          %ul
+            %li
+              %a{:href => '#'} Conoce
+            %li
+              %a{:href => '#'} &Uacute;nete
+            %li
+              %a{:href => '#'} Explora
+            %li
+              %a{:href => '#'} Contacto
+            %li
+              %a{:class => 'login', :href => '#'} Login
     = yield
+    :javascript
+      var setDimensions;
+      setDimensions = function() {
+        var windowsHeight;
+        windowsHeight = $(window).height();
+        $('.landing').css('height', windowsHeight + 'px');
+      };
+      setDimensions();
+
+      $(window).resize(function() {
+        setDimensions();
+      });
+

@@ -1,4 +1,6 @@
+@import "../global/voluntari_settings";
 @import "../global/voluntari_variables";
+@import "../global/voluntari_mixins";
 .landing {
 	background-image: image-url("l_bg.jpg");
 	background-attachment: fixed;
@@ -7,18 +9,58 @@
 	background-size: cover;
 	> .overlay {
 		background: rgba(0,0,0,.6);
+		height:100%;
 		> .container {
 			> .row {
-				> .col-sm-8 {
+				> .col-sm-10 {
 					> h2 {
 						color: $color_white;
-						font-size:2em;
+						font-size:1.5em;
 						font-weight:bold;
 					}
 					> p {
 						color: $color_white;
-						font-size: 1.2em;
+						font-size: .85em;
 					}
+					> .row {
+						> .col-sm-4 {
+							display: inline-block;
+							> p {
+								color: $color_white;
+								font-size: .85em;
+								text-align:center;
+								> .big-text{
+									font-size:1.8em;
+									font-weight: bold;
+								}
+								> span {
+									display: block;
+								}
+								> .color-orange {
+									color: $color_orange;									
+								}
+								> .color-blue-light {
+									color: $color_bluecloud;
+								}
+								> .color-blue-ocean {
+									color: $color_blueocean;
+								}
+							}
+						}
+					}
+					> .scroll-down {
+						text-align:center;
+						> .circle {
+							border: 2px solid $color_white;
+							border-radius: 50%;
+							color: $color_white;
+							display:inline-block;
+							height:42px;
+							position: relative;
+							width: 42px;
+						}
+					}
+
 				}
 			}
 		}
