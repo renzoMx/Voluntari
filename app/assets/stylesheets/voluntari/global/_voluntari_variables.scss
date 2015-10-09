@@ -2,8 +2,17 @@
 // =============================================================================
 // Include Font Face
 // =============================================================================
-@include font-face-icons(Flaticon, /assets/icons/flaticon);
+@include font-face(Flaticon, /assets/icons/flaticon);
 
+@include font-face(Cabin-Regular, /assets/cabin/Cabin-Regular);
+@include font-face(Cabin-Medium, /assets/cabin/Cabin-Medium);
+@include font-face(Cabin-SemiBold, /assets/cabin/Cabin-SemiBold);
+@include font-face(Cabin-Bold, /assets/cabin/Cabin-Bold);
+
+@include font-face(Cabin-Italic, /assets/cabin/Cabin-Italic);
+@include font-face(Cabin-MediumItalic, /assets/cabin/Cabin-MediumItalic);
+@include font-face(Cabin-SemiBoldItalic, /assets/cabin/Cabin-SemiBoldItalic);
+@include font-face(Cabin-BoldItalic, /assets/cabin/Cabin-BoldItalic);
 // =============================================================================
 // Text Colors
 // =============================================================================
