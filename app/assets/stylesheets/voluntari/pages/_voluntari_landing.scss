@@ -73,3 +73,21 @@
 		}
 	}	
 }
+.about {
+	background: $bg_blueocean;
+	padding: 2em 0;
+	color:white;
+	text-align:center;
+	> .container {
+		> article {
+			> h2 {
+				font-size:1.3em;
+				margin-bottom: 1em;
+			}
+
+			> a.button-orange {
+				@include button-orange($color_orange, .5em 1.5em);
+			}
+		}
+	}
+}
