@@ -7,61 +7,68 @@
 	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position:relative;
 	> .overlay {
-		background: rgba(0,0,0,.6);
-		height:100%;
+		background: rgba(0,0,0,.6);	
+		height:100%;			
 		> .container {
-			> .row {
-				> .col-sm-10 {
-					> h2 {
-						color: $color_white;
-						font-size:1.5em;
-						font-weight:bold;
-					}
-					> p {
-						color: $color_white;
-						font-size: .85em;
-					}
-					> .row {
-						> .col-sm-4 {
-							display: inline-block;
-							> p {
-								color: $color_white;
-								font-size: .85em;
-								text-align:center;
-								> .big-text{
-									font-size:1.8em;
-									font-weight: bold;
-								}
-								> span {
-									display: block;
-								}
-								> .color-orange {
-									color: $color_orange;									
-								}
-								> .color-blue-light {
-									color: $color_bluecloud;
-								}
-								> .color-blue-ocean {
-									color: $color_blueocean;
-								}
+			> .main-info{
+				padding-top:45%;			
+				> h2 {
+					color: white;
+					font-size:1.7em;
+					font-weight:bold;
+					margin-bottom: .5em;
+				}
+				> p {
+					color: $color_white;
+					font-size: .95em;
+					margin-bottom: 3em;
+				}
+				> .row {
+					text-align:center;
+					> .col-sm-4 {
+						display: inline-block;
+						> p {
+							color: $color_white;
+							font-size: .85em;
+							text-align:center;
+							> .big-text{
+								font-size:1.8em;
+								font-weight: bold;
+							}
+							> span {
+								display: block;
+							}
+							> .color-orange {
+								color: $color_orange;									
+							}
+							> .color-blue-light {
+								color: $color_bluecloud;
+							}
+							> .color-blue-ocean {
+								color: $color_blueocean;
 							}
 						}
 					}
-					> .scroll-down {
-						text-align:center;
-						> .circle {
-							border: 2px solid $color_white;
-							border-radius: 50%;
-							color: $color_white;
-							display:inline-block;
-							height:42px;
-							position: relative;
-							width: 42px;
-						}
-					}
-
 				}
+				> .scroll-down {
+					bottom:5%;
+					left:0;
+					position:absolute;
+					right:0;
+					text-align:center;
+					> .circle {
+						border: 2px solid $color_white;
+						border-radius: 50%;
+						color: $color_white;
+						display:inline-block;
+						height:42px;
+						position: relative;
+						width: 42px;
+					}
+				}				
+				
 			}
 		}
 	}	
