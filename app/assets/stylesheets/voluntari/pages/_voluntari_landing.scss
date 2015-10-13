@@ -9,7 +9,7 @@
 	background-size: cover;
 	position:relative;
 	> .overlay {
-		background: rgba(0,0,0,.6);	
+		@include overlay(0,0,0,.6);
 		height:100%;			
 		> .container {
 			> .main-info{
@@ -75,7 +75,7 @@
 }
 .about {
 	background: $bg_blueocean;
-	padding: 2em 0;
+	padding: 3.5em .5em;
 	color:white;
 	text-align:center;
 	> .container {
@@ -87,6 +87,50 @@
 
 			> a.button-orange {
 				@include button-orange($color_orange, .5em 1.5em);
+			}
+		}
+	}
+}
+.join-in {
+	padding: 3em 0;
+	> .container {
+		> ul {
+			> li {
+				margin: -16px 0;
+				> a {
+					display:block;
+					> figure {
+						position:relative;
+						> img {
+							width: 100%;
+						}
+						> figcaption {							
+							bottom:0;
+							color: white;
+							padding: .5em;
+							position:absolute;
+							top:0;
+							> .wrap {
+								position:relative;
+								> .wrap-text {	
+									margin-top:10%;	
+									> h3 {
+										text-shadow: 0 1px 2px rgba(0,0,0,.4);
+									}
+								}
+							}
+						}
+						> .rgba-orange {
+							@include overlay(245,172,40, .6);
+						}
+						> .rgba-blueocean {
+							@include overlay(75,173,203, .6);
+						}
+						> .rgba-green {
+							@include overlay(84,173,115, .6);
+						}
+					}
+				}
 			}
 		}
 	}
