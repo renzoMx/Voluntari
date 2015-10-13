@@ -121,13 +121,13 @@
 							}
 						}
 						> .rgba-orange {
-							@include overlay(245,172,40, .6);
+							@include overlay(245,172,40, .8);
 						}
 						> .rgba-blueocean {
-							@include overlay(75,173,203, .6);
+							@include overlay(75,173,203, .8);
 						}
 						> .rgba-green {
-							@include overlay(84,173,115, .6);
+							@include overlay(84,173,115, .8);
 						}
 					}
 				}
