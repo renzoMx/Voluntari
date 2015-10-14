@@ -92,7 +92,7 @@
 	}
 }
 .join-in {
-	padding: 3em 0;
+	padding: 4em 0 3em 0;
 	> .container {
 		> ul {
 			> li {
@@ -129,6 +129,43 @@
 						> .rgba-green {
 							@include overlay(84,173,115, .8);
 						}
+					}
+				}
+			}
+		}
+	}
+}
+.explora {
+	background: $color_blue;
+	padding: 4em 0 3em 0;
+	> .container {
+		> .owl-carousel {
+			text-align:center;
+			> li {
+				display:inline-block;
+				margin:.5em;				
+				vertical-align:top;
+				> .item-cat {
+					> .item-link {
+						.font-style:normal;
+					}
+				}
+			}
+			> .owl-controls {
+				> .owl-buttons{
+					> .owl-prev {
+						background:none;
+						border: 2px solid #fff;
+						left:0;
+						position:absolute;
+						top:0;
+					}
+					> .owl-next {
+						background:none;
+						border:2px solid #fff;
+						right:0;
+						position:absolute;
+						top:0;
 					}
 				}
 			}

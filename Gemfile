@@ -60,3 +60,6 @@ gem 'haml-rails', '~> 0.9.0'
 
 # Compass
 gem 'compass', '~> 1.0.3'
+
+# Owl Carousel
+gem 'owlcarousel-rails', '~> 1.1.3.3'
