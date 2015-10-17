@@ -14,6 +14,8 @@
 //= require tether
 //= require bootstrap-sprockets
 //= require owl.carousel
+//= require underscore
+//= require gmaps/google
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .

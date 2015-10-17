@@ -63,3 +63,7 @@ gem 'compass', '~> 1.0.3'
 
 # Owl Carousel
 gem 'owlcarousel-rails', '~> 1.1.3.3'
+
+# Gmaps4Rails
+gem 'gmaps4rails', '~> 2.1.2'
+gem 'underscore-rails'

@@ -27,6 +27,23 @@
             %li
               %a{:class => 'login', :href => '#'} Login
     = yield
+    %script{:src => '//maps.google.com/maps/api/js?v=3.13&amp;sensor=false&amp;libraries=geometry'}
+    %script{:src => '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js'}
+    :javascript
+      handler = Gmaps.build('Google');
+      handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+        markers = handler.addMarkers([
+          {
+            "lat": '-12.0552581',
+            "lng": '-77.0802908,13z',
+            "infowindow": "Lima, Peru!"
+          }
+        ]);
+        handler.map.centerOn(markers);
+        handler.bounds.extendWith(markers);
+        handler.fitMapToBounds();
+        handler.getMap().setZoom(4);
+      });
     :javascript
       var setDimensions;
       setDimensions = function() {
