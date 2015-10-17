@@ -21,4 +21,24 @@ $ ->
 $ ->
   $(".owl-carousel").owlCarousel({navigation: true, navigationText: ["<", ">"],pagination : false})
 
+$ ->
+  play = false;
+  $('#play-button').on 'touchstart click', (event) ->
+    event.preventDefault()
+    if play == false
+      $(this).removeClass('icon-play')
+      $(this).addClass('icon-pause')
+      $('#l-video').get(0).play();
+      play = true
+    else
+      $(this).removeClass('icon-pause')
+      $(this).addClass('icon-play')
+      $('#l-video').get(0).pause();
+      play = false
+    return
+  return
+
+
+
+
 

@@ -91,6 +91,28 @@
 		}
 	}
 }
+.video-about {
+	> .videoContainer {
+		position:relative;
+	    > video {	    	
+	    	width: 100%;
+		    height: auto;
+		    max-height: 100%;
+	    }
+	    > .overlay-absolute {
+	    	@include overlay(0,0,0,.6);
+	    	left:0;
+	    	position:absolute;
+	    	right:0;
+	    	top:0;
+	    	bottom:8px;
+	    	> .button-play {
+	    		margin-top: 25%;
+	    		text-align:center;
+	    	}
+	    }
+	}	
+}
 .join-in {
 	padding: 4em 0 3em 0;
 	> .container {

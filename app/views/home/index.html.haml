@@ -18,6 +18,16 @@
 		%article.about-text
 			%h2.big-text-x Thus much i thought proper to tell you in relation to yourself, and to the trust i reposed in you
 			%a.button-orange{:href => '#'} Sign Up
+%section.video-about
+	%div.videoContainer
+		%video#l-video
+			%source{:src => video_path('trailer.mp4'), :type => 'video/mp4; codecs="avc1.42E01E, mp4a.40.2@'}
+			%source{:src => video_path('trailer.webm'), :type => 'video/webm; codecs="vp8, vorbis"'}
+			Video not supported.
+		%div.overlay-absolute
+			%div.button-play
+				%a.icon-play#play-button{:href => "#"} Play
+
 %section.join-in
 	%div.container
 		%ul
