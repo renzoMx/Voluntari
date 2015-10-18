@@ -27,11 +27,54 @@
             %li
               %a{:class => 'login', :href => '#'} Login
     = yield
+    %footer
+      %div.container 
+        %div.row
+          %div.col-sm-4 
+            %div.wrap.l-logo
+              %div.logo
+                = image_tag "logo-white.png"
+              %p Voluntari es una iniciativa gestionada por la organizaci&oacute;n sin fines de lucro Sumak Qausay Comunicaci&oacute;n Social.
+          %div.col-sm-4 
+            %div.wrap.l-contact
+              %h2 Contacto
+              %ul
+                %li
+                  %i.icon-location a
+                  %p Av. San Borja Sur #670
+                  %p San Borja - Lima Per&uacute;
+                %li
+                  %i.icon-phone p
+                  %p (51) 947126358
+                  %p (51) 947126604
+                %li
+                  %i.icon-contact c
+                  %p contacto@voluntari.org
+
+          %div.col-sm-4 
+            %div.wrap.l-leads
+              %h2 Suscr&iacute;bete
+              %span Tranquilo no enviaremos spam con tu email
+              %form 
+                %div.form-group
+                  %input{:name => 'leads', :placeholder => 'E-mail', :type => 'email', :class => 'l-i-leads'}
+                  %input{:type => 'button', :value => '>', :class=> 'l-btn-leads'} 
+              %div.socials-icons
+                %a.circle{:href => "#"} 
+                  %i.facebook-icon f
+                %a.circle{:href => "#"} 
+                  %i.facebook-icon t
+                %a.circle{:href => "#"} 
+                  %i.facebook-icon i
+                %a.circle{:href => "#"} 
+                  %i.facebook-icon l
+                %a.circle{:href => "#"} 
+                  %i.facebook-icon y
     %script{:src => '//maps.google.com/maps/api/js?v=3.13&amp;sensor=false&amp;libraries=geometry'}
     %script{:src => '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js'}
     :javascript
       handler = Gmaps.build('Google');
-      handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+      handler.buildMap({ provider: {scrollwheel: false, zoomControl: false}, internal: {id: 'map'}}, function(){
         markers = handler.addMarkers([
           {
             "lat": '-12.0552581',

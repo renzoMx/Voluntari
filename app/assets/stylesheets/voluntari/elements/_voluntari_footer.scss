@@ -1,0 +1,97 @@
+@import "../global/voluntari_variables";
+@import "../global/voluntari_settings";
+@import "../global/voluntari_mixins";
+footer {
+	background: $color_orange;
+	color: white;
+	padding: 3em 0;
+	> .container {
+		> .row {
+			> .col-sm-4 {
+				> .wrap {
+					padding: 1em;
+					> .logo {
+						> img {
+							width: 200px;
+						}
+					}
+					> p {
+						padding: .5em 0;
+					}
+					> h2 {
+						font-family: 'Cabin-Bold';
+						font-size: 1.5em;
+						font-weight:bold;
+						margin-bottom:.5em;
+						text-transform: uppercase;
+					}
+					> ul {
+						> li {
+							position:relative;
+							margin:.3em 0;
+							> i {
+								background: $color_blue;
+								border-radius:50%;
+								display:inline-block;
+								height:38px;
+								position:absolute;
+								top:0;
+								width: 38px;
+							}
+							> p {
+								padding-left:3em;								
+							}
+						}
+					}
+					> span {
+						color: $color_white;
+						font-size: .8em;
+						padding-top: .5em;
+					}
+					> form {						
+						> .form-group {
+							> .l-i-leads, .l-btn-leads {
+								border:0;
+								border-radius: .3em;
+								color: white;
+								display:inline-block;
+								outline:none;
+								padding: .5em 1em .5em 3em;
+							}
+							> input::-webkit-input-placeholder {
+								color:white;
+							}
+							> .l-i-leads {
+								@include overlay(255,255,255,.3);
+								transition: all .3s ease;
+								width:190px;
+							}
+							> .l-i-leads:focus {
+								background: white;
+								color:$color_orange_dark;
+							}
+							> .l-btn-leads {
+								background: $color_orange_dark;
+								color: white;
+								padding: .5em 1em;
+							}
+						}
+					}
+					> .socials-icons {
+						margin-top: .5em;
+						> .circle {
+							background:$color_blue;
+							border-radius: 50%;
+							display:inline-block;
+							height:38px;
+							margin:.2em;
+							position:relative;
+							width:38px;
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
