@@ -67,3 +67,6 @@ gem 'owlcarousel-rails', '~> 1.1.3.3'
 # Gmaps4Rails
 gem 'gmaps4rails', '~> 2.1.2'
 gem 'underscore-rails'
+
+# Multilanguage
+gem 'i18n', '~> 0.7.0'
