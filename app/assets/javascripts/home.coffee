@@ -22,19 +22,13 @@ $ ->
   $(".owl-carousel").owlCarousel({navigation: true, navigationText: ["<", ">"],pagination : false})
 
 $ ->
-  play = false;
-  $('#play-button').on 'touchstart click', (event) ->
-    event.preventDefault()
-    if play == false
-      $(this).removeClass('icon-play')
-      $(this).addClass('icon-pause')
-      $('#l-video').get(0).play();
-      play = true
+  $('#l-video').parent().on 'touchstart click', ->
+    if $(this).children('#l-video').get(0).paused
+      $(this).children('#l-video').get(0).play()
+      $(this).children('#play-button').fadeOut()
     else
-      $(this).removeClass('icon-pause')
-      $(this).addClass('icon-play')
-      $('#l-video').get(0).pause();
-      play = false
+      $(this).children('#l-video').get(0).pause()
+      $(this).children('#play-button').fadeIn()
     return
   return
 
