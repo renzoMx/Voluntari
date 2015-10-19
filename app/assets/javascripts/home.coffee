@@ -19,7 +19,7 @@ $ ->
     return
   return
 $ ->
-  $(".owl-carousel").owlCarousel({navigation: true, navigationText: ["<", ">"],pagination : false})
+  $(".owl-carousel").owlCarousel({navigation: true, navigationText: ["<i class='prev-icon'></i>", "<i class='next-icon'></i>"],pagination : false})
 
 $ ->
   $('#l-video').parent().on 'touchstart click', ->

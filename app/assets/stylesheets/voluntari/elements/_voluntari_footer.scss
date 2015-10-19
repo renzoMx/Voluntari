@@ -35,8 +35,30 @@ footer {
 								display:inline-block;
 								height:38px;
 								position:absolute;
-								top:0;
+								text-align:center;
+								top:3px;
 								width: 38px;
+							}
+							> .location-icon:before{
+								@include icons('\e007', white ,'Flaticon', 1.5em);
+								left:0;
+								position:absolute;
+								right:0;
+								top:1px;
+							}
+							> .phone-icon:before{
+								@include icons('\e005', white ,'Flaticon', 1.2em);
+								left:0;
+								position:absolute;
+								right:0;
+								top:5px;
+							}
+							> .contact-icon:before{
+								@include icons('\e004', white ,'Flaticon', 1.2em);
+								left:0;
+								position:absolute;
+								right:4px;
+								top:5px;
 							}
 							> p {
 								padding-left:3em;								
@@ -56,7 +78,7 @@ footer {
 								color: white;
 								display:inline-block;
 								outline:none;
-								padding: .5em 1em .5em 3em;
+								padding: .5em 1em;
 							}
 							> input::-webkit-input-placeholder {
 								color:white;
@@ -74,6 +96,7 @@ footer {
 								background: $color_orange_dark;
 								color: white;
 								padding: .5em 1em;
+								position:relative;
 							}
 						}
 					}
@@ -86,8 +109,44 @@ footer {
 							height:38px;
 							margin:.2em;
 							position:relative;
+							text-align:center;
 							width:38px;
-
+							> .facebook-icon:before {
+								@include icons('\e00a', white ,'Flaticon', 1.3em);
+								left:0;
+								position:absolute;
+								right:0;
+								top:4px;
+							}
+							> .twitter-icon:before {
+								@include icons('\e009', white ,'Flaticon', 1.3em);
+								left:0;
+								margin:0 auto;
+								position:absolute;
+								right:0;
+								top:4px;
+							}
+							> .instagram-icon:before {
+								@include icons('\e001', white ,'Flaticon', 1.3em);
+								left:0;
+								position:absolute;
+								right:0;
+								top:4px;
+							}
+							> .linkedin-icon:before {
+								@include icons('\e00b', white ,'Flaticon', 1.3em);
+								left:0;
+								position:absolute;
+								right:0;
+								top:3px;
+							}
+							> .youtube-icon:before {
+								@include icons('\e00d', white ,'Flaticon', 1.5em);
+								left:0;
+								position:absolute;
+								right:0;
+								top:2px;
+							}
 						}
 					}
 				}

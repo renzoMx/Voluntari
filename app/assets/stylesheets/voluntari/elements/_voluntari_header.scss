@@ -19,13 +19,13 @@ header {
 			}	
 		}	
 		> .burger:before {
-			@include icons('\e001', $color_blue ,'Flaticon', 1.5em);
+			@include icons('\e003', $color_blue ,'Flaticon', 1.5em);
 			display:inline-block;
 			float:right;
 			margin-top: .3em;
 		}
 		> .close-menu:before {
-			@include icons('\e000', $color_blue ,'Flaticon', 1.5em);
+			@include icons('\e00c', $color_blue ,'Flaticon', 1.5em);
 			@include animation-rotate-360(0, 360deg);
 			animation-duration:.3s;
 			animation-name: animation-rotate;
