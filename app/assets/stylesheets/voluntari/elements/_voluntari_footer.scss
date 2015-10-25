@@ -2,7 +2,7 @@
 @import "../global/voluntari_settings";
 @import "../global/voluntari_mixins";
 footer {
-	background: $color_orange;
+	background: $color_orange url('/assets/over-trans.png') repeat;
 	color: white;
 	padding: 3em 0;
 	> .container {
