@@ -233,3 +233,393 @@
 		width:100%;
 	}
 }
+
+// Media Queries
+@media screen and(min-width: $break-mobile-large) and (max-width: $break-tablet-small){
+	.landing {
+		> .overlay {			
+			> .container {
+				> .main-info{
+						padding-top:35%;	
+					> h2 {
+						font-size:2.5em;
+					}
+					> p {					
+						font-size: 1.1em;
+					}
+					> .row {
+						> .col-sm-4 {
+							> p {
+								font-size: 1.1em;
+								> .big-text{
+									font-size:2em;
+								}
+								> span {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.about {
+		> .container {
+			> article {
+				> h2 {
+					font-size:1.8em;
+				}
+			}
+		}
+	}
+
+	.join-in {
+		padding: 4em 1em 3em 1em;
+		> .container {
+			> ul {
+				> li {
+					> a {
+						> figure {
+							> figcaption {
+								padding: 1em;
+								> .wrap {
+									> .wrap-text {	
+										margin-top:40%;	
+										> h3 {
+											font-size:2em;
+										}
+										> p {
+											font-size: 1.1em;
+										}
+									}
+								}
+							}
+							> .rgba-orange {
+								@include overlay(245,172,40, .8);
+							}
+							> .rgba-blueocean {
+								@include overlay(75,173,203, .8);
+							}
+							> .rgba-green {
+								@include overlay(84,173,115, .8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+}
+@media screen and(min-width: $break-tablet-large) and (max-width: $break-desktop-small){
+	.landing {
+		> .overlay {			
+			> .container {
+				> .main-info{
+						padding-top:25%;	
+					> h2 {
+						font-size:3em;
+					}
+					> p {					
+						font-size: 1.3em;
+					}
+					> .row {
+						> .col-sm-4 {
+							> p {
+								font-size: 1em;
+								> .big-text{
+									font-size:2em;
+								}
+								> span {
+									display: inline-block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.about {
+		> .container {
+			> article {
+				> h2 {
+					font-size:2em;
+				}
+			}
+		}
+	}
+	.video-about {
+		> .videoContainer {
+		    > .overlay-absolute:before {
+		    	top:40%;
+		    }
+		}	
+	}
+
+	.join-in {
+		padding-bottom: 4em;
+		> .container {
+			text-align:center;
+			> ul {
+				overflow:hidden;
+				> li:nth-child(2){
+					margin-left: -4px;
+				}
+				> li:nth-child(3){
+					margin-top:15px;
+				}
+				> li {
+					display:inline-block;
+					overflow:hidden;
+					height: 273px;
+					text-align:left;
+					vertical-align:top;
+					width: 48%;
+					> a {
+						> figure {
+							> figcaption {
+								padding: 1em;
+								> .wrap {
+									> .wrap-text {	
+										margin-top:20%;	
+										> h3 {
+											font-size:2em;
+										}
+										> p {
+											font-size: 1.1em;
+										}
+									}
+								}
+							}
+							> .rgba-orange {
+								@include overlay(245,172,40, .8);
+							}
+							> .rgba-blueocean {
+								@include overlay(75,173,203, .8);
+							}
+							> .rgba-green {
+								@include overlay(84,173,115, .8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+}
+
+@media screen and(min-width: $break-desktop-large) and (max-width: $break-desktop-hd){
+
+	.landing {
+		> .overlay {			
+			> .container {
+				> .main-info{
+						padding-top:25%;	
+					> h2 {
+						font-size:3em;
+					}
+					> p {					
+						font-size: 1.3em;
+					}
+					> .row {
+						> .col-sm-4 {
+							> p {
+								font-size: 1em;
+								> .big-text{
+									font-size:2em;
+								}
+								> span {
+									display: inline-block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.about {
+		> .container {
+			> article {
+				> h2 {
+					font-size:2em;
+				}
+			}
+		}
+	}
+	.video-about {
+		> .videoContainer {
+		    > .overlay-absolute:before {
+		    	top:40%;
+		    }
+		}	
+	}
+
+	.join-in {
+		padding-bottom: 4em;
+		> .container {
+			text-align:center;
+			> ul {
+				overflow:hidden;
+				> li:nth-child(2){
+					margin-left: -4px;
+				}
+				> li:nth-child(3){
+					margin-top:15px;
+				}
+				> li {
+					display:inline-block;
+					overflow:hidden;
+					height: 273px;
+					text-align:left;
+					vertical-align:top;
+					width: 48%;
+					> a {
+						> figure {
+							> figcaption {
+								padding: 1em;
+								> .wrap {
+									> .wrap-text {	
+										margin-top:20%;	
+										> h3 {
+											font-size:2em;
+										}
+										> p {
+											font-size: 1.1em;
+										}
+									}
+								}
+							}
+							> .rgba-orange {
+								@include overlay(245,172,40, .8);
+							}
+							> .rgba-blueocean {
+								@include overlay(75,173,203, .8);
+							}
+							> .rgba-green {
+								@include overlay(84,173,115, .8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and(min-width: $break-desktop-hd){
+
+	.landing {
+		> .overlay {			
+			> .container {
+				> .main-info{
+						padding-top:16%;						
+					> h2 {
+						font-size:3.5em;
+						max-width:555px;	
+					}
+					> p {					
+						font-size: 1.1em;
+						margin-bottom:5em;
+						max-width: 666px;
+					}
+					> .row {
+						> .col-sm-4 {
+							text-align:left;
+							> p {
+								font-size: 1.2em;
+								text-align:left;
+								> .big-text{
+									font-size:3em;
+								}
+								> span {
+									display: inline-block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.about {
+		padding: 6em 0;
+		> .container {
+			> article {
+				> h2 {
+					font-size:2em;
+					margin:0 auto;
+					margin-bottom:1em;
+					width:70%;
+				}
+			}
+		}
+	}
+	.video-about {
+		> .videoContainer {
+		    > .overlay-absolute:before {
+		    	top:40%;
+		    }
+		}	
+	}
+
+	.join-in {
+		padding-bottom: 4em;
+		> .container {
+			text-align:center;
+			> ul {
+				overflow:hidden;
+				> li:nth-child(2){
+					margin-left: -4px;
+				}
+				> li:nth-child(3){
+					margin-left:-4px;
+					margin-top:0;
+				}
+				> li {
+					display:inline-block;
+					overflow:hidden;
+					height: 273px;
+					text-align:left;
+					vertical-align:top;
+					width: 33%;
+					> a {
+						> figure {
+							> figcaption {
+								padding: 1em;
+								> .wrap {
+									> .wrap-text {	
+										margin-top:20%;	
+										> h3 {
+											font-size:2em;
+										}
+										> p {
+											font-size: 1.1em;
+										}
+									}
+								}
+							}
+							> .rgba-orange {
+								@include overlay(245,172,40, .8);
+							}
+							> .rgba-blueocean {
+								@include overlay(75,173,203, .8);
+							}
+							> .rgba-green {
+								@include overlay(84,173,115, .8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
