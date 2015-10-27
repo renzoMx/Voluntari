@@ -2,7 +2,7 @@
 @import "../global/voluntari_settings";
 @import "../global/voluntari_mixins";
 header {
-	background: $bg_header;
+	background:transparent;
 	left:0;
 	position:fixed;
 	right:0;
@@ -71,3 +71,66 @@ header {
 		}
 	}
 }
+
+@media screen and(min-width: $break-desktop-large){
+	header {		
+		padding-top:30px;
+		> .container {	
+			> h1 {
+				display: inline-block;
+				vertical-align: top;
+				> a {
+					> img {
+						width: 240px;
+					}
+				}	
+			}
+			> .burger:before {
+				height:0;
+				overflow:hidden;
+			}			
+			> nav {
+				display: inline-block;
+				float:right;
+				margin-top: .4em;	
+				vertical-align:top;
+				> .hidden-menu {
+					height: auto;
+					overflow:hivisible;
+					transition: all .5s ease;
+				}		
+				> ul {
+					background: none;
+					position: relative;					
+					> li {
+						border: 0;
+						display:inline-block;
+						vertical-align:top;
+						> a {
+							color: $color_white;
+							display:inline-block;
+							text-transform:uppercase;
+							padding: .5em 1em;
+							&:hover {
+								background:none;
+								color: $color_orange;
+								text-decoration:none;
+							}
+						}
+						> .login {
+							background: $color_orange;
+							border-radius:.3em;
+							color:white;
+							transition:all .3s ease;
+							&:hover {
+								background: $color_orange_dark;
+								color: $color_white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

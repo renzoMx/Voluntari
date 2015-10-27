@@ -13,7 +13,7 @@
 		height:100%;			
 		> .container {
 			> .main-info{
-				padding-top:45%;			
+				padding-top:45%;							
 				> h2 {
 					color: white;
 					font-size:1.7em;
@@ -520,7 +520,9 @@
 		> .overlay {			
 			> .container {
 				> .main-info{
+						margin: 0 auto;
 						padding-top:16%;						
+						width:90%;
 					> h2 {
 						font-size:3.5em;
 						max-width:555px;	
@@ -554,10 +556,10 @@
 		> .container {
 			> article {
 				> h2 {
-					font-size:2em;
+					font-size:2.5em;
 					margin:0 auto;
 					margin-bottom:1em;
-					width:70%;
+					width:90%;
 				}
 			}
 		}
@@ -618,6 +620,14 @@
 						}
 					}
 				}
+			}
+		}
+	}
+
+	.explora {
+		> .container {
+			> h2 {
+				font-size: 2.5em;
 			}
 		}
 	}
